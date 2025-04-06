@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROHAN's Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #007BFF;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>ROHAN</header>
+
+<div class="container">
+    <h2>Assignment Links</h2>
+    <ul id="assignment-list">
+        <li><a href="https://example.com" target="_blank">Sample Assignment 1</a></li>
+        <li><a href="https://example.com" target="_blank">Sample Assignment 2</a></li>
+        <li><a href="https://docs.google.com/document/d/17QI35bDJIBSoXF4gIy4fRXuCLE1Yji6WHQVb2pow4XQ/edit?usp=sharing" target="_blank">My Google Drive Assignment</a></li>
+    </ul>
+
+    <h2>Virtual Library Table</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>ISBN</th>
+            <th>Library Code</th>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Publication Date</th>
+            <th>Available</th>
+            <th>Last Checkout Date</th>
+        </tr>
+        <tr>
+            <td>1</td><td>80141439518</td><td>LIB001</td><td>Jane Austen</td><td>Pride and Prejudice</td><td>Classics</td><td>1813</td><td>Yes</td><td>2025-03-25</td>
+        </tr>
+        <tr>
+            <td>2</td><td>81503280786</td><td>LIB002</td><td>Herman Melville</td><td>Moby Dick</td><td>Classics</td><td>1851</td><td>No</td><td>2025-03-30</td>
+        </tr>
+        <tr>
+            <td>3</td><td>80451524935</td><td>LIB003</td><td>George Orwell</td><td>1984</td><td>Classics</td><td>1949</td><td>Yes</td><td>2025-04-01</td>
+        </tr>
+    </table>
+
+    <h2>Author Table</h2>
+    <table>
+        <tr>
+            <th>Author</th>
+            <th>Birthdate</th>
+            <th>Death</th>
+            <th>Gender</th>
+        </tr>
+        <tr><td>Jane Austen</td><td>1775-12-16</td><td>1817-07-18</td><td>Female</td></tr>
+        <tr><td>Herman Melville</td><td>1819-08-01</td><td>1891-09-28</td><td>Male</td></tr>
+        <tr><td>George Orwell</td><td>1903-06-25</td><td>1950-01-21</td><td>Male</td></tr>
+    </table>
+
+    <h2>Library Branch Table</h2>
+    <table>
+        <tr>
+            <th>Library Code</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        <tr><td>LIB001</td><td>Central Library</td><td>Seoul</td><td>010-1111-0001</td><td>central@univ.edu</td></tr>
+        <tr><td>LIB002</td><td>North Branch</td><td>Busan</td><td>010-1111-0002</td><td>north@univ.edu</td></tr>
+        <tr><td>LIB003</td><td>South Branch</td><td>Incheon</td><td>010-1111-0003</td><td>south@univ.edu</td></tr>
+    </table>
+
+    <h2>Entity Relationship Screenshot</h2>
+    <img src="Screenshot 2025-04-07 012436.png" alt="ER Diagram showing foreign key relationships">
+</div>
+
+</body>
+</html>
