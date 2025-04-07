@@ -47,12 +47,10 @@
         a:hover {
             color: #007BFF;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
         }
     </style>
 </head>
@@ -65,19 +63,17 @@
     <ul id="assignment-list">
         <li><a href="https://example.com" target="_blank">Sample Assignment 1</a></li>
         <li><a href="https://example.com" target="_blank">Sample Assignment 2</a></li>
-        <li><a href="https://docs.google.com/document/d/17QI35bDJIBSoXF4gIy4fRXuCLE1Yji6WHQVb2pow4XQ/edit?usp=sharing" target="_blank">My Google Drive Assignment</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link" target="_blank">My Google Drive Folder</a></li>
     </ul>
-
-    <h2>CSV Files Used</h2>
-    <ul>
-        <li><a href="LIBRARY - Sheet1 (1).csv" download>Library Data CSV</a></li>
-        <li><a href="AUTHOR - Sheet1 (1).csv" download>Author Data CSV</a></li>
-        <li><a href="VIRTUAL LIBRARY - Sheet1 (1).csv" download>Virtual Library CSV</a></li>
-    </ul>
-
-    <h2>Entity Relationship Screenshot</h2>
-    <img src="Screenshot 2025-04-07 012436.png" alt="Entity Relationship Diagram">
+    
+    <h2>View My Google Document</h2>
+    <!-- Embed Google Docs here -->
+    <iframe src="https://docs.google.com/document/d/17QI35bDJIBSoXF4gIy4fRXuCLE1Yji6WHQVb2pow4XQ/edit?usp=sharing"></iframe>
 </div>
+
+<script>
+    // Example: You can dynamically add more links using JavaScript if needed
+</script>
 
 </body>
 </html>
