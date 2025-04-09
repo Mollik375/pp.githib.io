@@ -9,11 +9,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             text-align: center;
+            background: url('image.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
         header {
-            background: #333;
+            background: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 20px;
             font-size: 24px;
@@ -22,7 +23,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -63,6 +64,7 @@
     <ul id="assignment-list">
         <li><a href="https://example.com" target="_blank">Sample Assignment 1</a></li>
         <li><a href="https://example.com" target="_blank">Sample Assignment 2</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link" target="_blank">My Google Drive Folder</a></li>
     </ul>
     
     <h2>View My Google Document</h2>
