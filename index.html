@@ -34,4 +34,70 @@
       padding: 0;
     }
     ul li {
-      background: rgba(255
+      background: rgba(255, 255, 255, 0.9);
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 6px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #007BFF;
+    }
+    .assignment-link {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #fff;
+    }
+    .submit-form {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .submit-form input[type="url"] {
+      padding: 10px;
+      width: 60%;
+      border: none;
+      border-radius: 6px;
+    }
+    .submit-form button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .submit-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<header>ROHAN</header>
+
+<div class="container">
+  <h2>Assignment Links</h2>
+  <ul id="assignment-list">
+    <li><a href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link" target="_blank">Week 4</a></li>
+  </ul>
+
+  <div class="assignment-link">
+    <a href="https://docs.google.com/document/d/17QI35bDJIBSoXF4gIy4fRXuCLE1Yji6WHQVb2pow4XQ/edit?usp=sharing" target="_blank">Week 2</a>
+  </div>
+
+  <div class="submit-form">
+    <input type="url" placeholder="Paste your assignment link here" />
+    <button>Submit Assignment</button>
+  </div>
+</div>
+
+</body>
+</html>
