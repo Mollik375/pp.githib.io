@@ -12,7 +12,6 @@
             background: url('image.jpg') no-repeat center center fixed;
             background-size: cover;
             text-align: center;
-            color: white;
         }
         header {
             background: rgba(0, 0, 0, 0.7);
@@ -25,54 +24,33 @@
             max-width: 800px;
             margin: 30px auto;
             padding: 25px;
+            border-radius: 10px;
         }
         h2 {
-            color: #fff;
+            color: #ffffff;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         ul li {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.9);
             margin: 10px 0;
             padding: 12px;
             border-radius: 6px;
-            color: white;
         }
         a {
             text-decoration: none;
-            color: #fff;
+            color: #000;
             font-weight: bold;
         }
         a:hover {
-            color: #00d9ff;
+            color: #007BFF;
         }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            margin-top: 15px;
-        }
-        input[type="text"] {
-            padding: 10px;
-            width: 70%;
-            border: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            margin-left: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007BFF;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
+        .assignment-link {
+            margin-top: 30px;
+            font-size: 22px;
+            color: #fff;
         }
     </style>
 </head>
@@ -86,29 +64,10 @@
         <li><a href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link" target="_blank">My Google Drive Folder</a></li>
     </ul>
 
-    <input type="text" id="assignmentLink" placeholder="Paste your assignment link here">
-    <button onclick="addAssignment()">Submit Assignment</button>
-
-    <h2>Assignment 2</h2>
-    <iframe src="https://docs.google.com/document/d/17QI35bDJIBSoXF4gIy4fRXuCLE1Yji6WHQVb2pow4XQ/preview" allow="autoplay"></iframe>
+    <div class="assignment-link">
+        <a href="https://docs.google.com/document/d/17QI35bDJIBSoXF4gIy4fRXuCLE1Yji6WHQVb2pow4XQ/edit?usp=sharing" target="_blank">Assignment 2</a>
+    </div>
 </div>
-
-<script>
-    function addAssignment() {
-        const link = document.getElementById("assignmentLink").value;
-        if (link) {
-            const list = document.getElementById("assignment-list");
-            const li = document.createElement("li");
-            const a = document.createElement("a");
-            a.href = link;
-            a.target = "_blank";
-            a.textContent = "New Assignment";
-            li.appendChild(a);
-            list.appendChild(li);
-            document.getElementById("assignmentLink").value = "";
-        }
-    }
-</script>
 
 </body>
 </html>
