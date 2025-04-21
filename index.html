@@ -77,6 +77,20 @@
     .submit-form button:hover {
       background-color: #0056b3;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      background: rgba(255, 255, 255, 0.9);
+    }
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -97,6 +111,24 @@
     <input type="url" placeholder="Paste your assignment link here" />
     <button>Submit Assignment</button>
   </div>
+
+  <h2>CWG</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Assignment</th>
+        <th>Your Score</th>
+        <th>Total Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>week 2</td><td>2.25</td><td>3</td></tr>
+      <tr><td>week 3</td><td></td><td>3</td></tr>
+      <tr><td>week 4</td><td>3.00</td><td>3</td></tr>
+      <tr><td>week 5</td><td>3.00</td><td>3</td></tr>
+      <tr><td>week 6</td><td></td><td>3</td></tr>
+    </tbody>
+  </table>
 </div>
 
 </body>
