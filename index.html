@@ -77,6 +77,39 @@
     .submit-form button:hover {
       background-color: #0056b3;
     }
+
+    .grades-section {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .grades-section table {
+      width: 100%;
+      border-collapse: collapse;
+      color: white;
+    }
+
+    .grades-section th, .grades-section td {
+      padding: 10px;
+      border: 1px solid white;
+    }
+
+    .grades-section thead {
+      background-color: #333;
+    }
+
+    .grades-section tfoot {
+      background-color: #222;
+      font-weight: bold;
+    }
+
+    .grades-section tr:last-child td {
+      background-color: #444;
+    }
   </style>
 </head>
 <body>
@@ -96,6 +129,38 @@
   <div class="submit-form">
     <input type="url" placeholder="Paste your assignment link here" />
     <button>Submit Assignment</button>
+  </div>
+
+  <!-- Grade Table for CWJ -->
+  <div class="grades-section">
+    <h2>Overall Grade - CWJ</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Assignment</th>
+          <th>Your Score</th>
+          <th>Total Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>week 2</td><td>2.25</td><td>3</td></tr>
+        <tr><td>week 3</td><td>0.0</td><td>3</td></tr>
+        <tr><td>week 4</td><td>3.0</td><td>3</td></tr>
+        <tr><td>week 5</td><td>3.0</td><td>3</td></tr>
+        <tr><td>week 6</td><td>0.0</td><td>3</td></tr>
+        <tr><td>week 7</td><td>0.0</td><td>3</td></tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>8.25</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td colspan="3">Percentage: 45.83%</td>
+        </tr>
+      </tfoot>
+    </table>
   </div>
 </div>
 
