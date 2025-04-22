@@ -77,6 +77,20 @@
     .submit-form button:hover {
       background-color: #0056b3;
     }
+    table {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -97,6 +111,27 @@
     <input type="url" placeholder="Paste your assignment link here" />
     <button>Submit Assignment</button>
   </div>
+
+  <!-- CWJ Coursework Table -->
+  <h2 style="color: white; margin-top: 40px;">CWJ Coursework Grades</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Assignment</th>
+        <th>Your Score</th>
+        <th>Total Score</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>week 2</td><td>2.25</td><td>3</td><td>75.0%</td></tr>
+      <tr><td>week 3</td><td>0.0</td><td>3</td><td>0.0%</td></tr>
+      <tr><td>week 4</td><td>3.0</td><td>3</td><td>100.0%</td></tr>
+      <tr><td>week 5</td><td>3.0</td><td>3</td><td>100.0%</td></tr>
+      <tr><td>week 6</td><td>0.0</td><td>3</td><td>0.0%</td></tr>
+      <tr><td>week 7</td><td>0.0</td><td>3</td><td>0.0%</td></tr>
+    </tbody>
+  </table>
 </div>
 
 </body>
