@@ -38,14 +38,6 @@
       margin: 10px 0;
       padding: 12px;
       border-radius: 6px;
-      cursor: pointer;
-    }
-    .detail {
-      display: none;
-      margin-top: 10px;
-      background: #f1f1f1;
-      padding: 10px;
-      border-radius: 6px;
     }
     a {
       text-decoration: none;
@@ -105,43 +97,7 @@
     <input type="url" placeholder="Paste your assignment link here" />
     <button>Submit Assignment</button>
   </div>
-
-  <!-- CWG Coursework Section -->
-  <h2 style="color: white; margin-top: 40px;">CWG</h2>
-  <ul id="cwz-list">
-    <li onclick="toggleDetail(this)">
-      week 2
-      <div class="detail">Assignment: week 2<br>Your Score: 2.25<br>Total Score: 3<br>Percentage: 75%</div>
-    </li>
-    <li onclick="toggleDetail(this)">
-      week 3
-      <div class="detail">Assignment: week 3<br>Your Score: 0.0<br>Total Score: 3<br>Percentage: 0%</div>
-    </li>
-    <li onclick="toggleDetail(this)">
-      week 4
-      <div class="detail">Assignment: week 4<br>Your Score: 3.0<br>Total Score: 3<br>Percentage: 100%</div>
-    </li>
-    <li onclick="toggleDetail(this)">
-      week 5
-      <div class="detail">Assignment: week 5<br>Your Score: 3.0<br>Total Score: 3<br>Percentage: 100%</div>
-    </li>
-    <li onclick="toggleDetail(this)">
-      week 6
-      <div class="detail">Assignment: week 6<br>Your Score: 0.0<br>Total Score: 3<br>Percentage: 0%</div>
-    </li>
-    <li onclick="toggleDetail(this)">
-      week 7
-      <div class="detail">Assignment: week 7<br>Your Score: 0.0<br>Total Score: 3<br>Percentage: 0%</div>
-    </li>
-  </ul>
 </div>
-
-<script>
-  function toggleDetail(item) {
-    const detail = item.querySelector('.detail');
-    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
-  }
-</script>
 
 </body>
 </html>
