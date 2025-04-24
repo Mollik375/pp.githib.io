@@ -79,43 +79,11 @@
       background-color: #0056b3;
     }
 
-    .grades-section {
-      margin-top: 40px;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-      color: white;
-      display: none;
-    }
-
-    .grades-section table {
-      width: 100%;
-      border-collapse: collapse;
-      color: white;
-    }
-
-    .grades-section th, .grades-section td {
-      padding: 10px;
-      border: 1px solid white;
-    }
-
-    .grades-section thead {
-      background-color: #333;
-    }
-
-    .grades-section tfoot {
-      background-color: #222;
-      font-weight: bold;
-    }
-
-    .grades-toggle {
-      font-size: 22px;
+    .webapp-link {
       margin-top: 40px;
       background: rgba(255, 255, 255, 0.9);
-      display: inline-block;
-      padding: 12px 25px;
-      border-radius: 8px;
+      padding: 20px;
+      border-radius: 12px;
     }
   </style>
 </head>
@@ -138,48 +106,15 @@
     <button>Submit Assignment</button>
   </div>
 
-  <!-- Toggle Name -->
-  <div class="grades-toggle" onclick="toggleGrades()">CWJ</div>
-
-  <!-- Hidden Grade Table -->
-  <div class="grades-section" id="grades">
-    <h2>Overall Grade - CWJ</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Assignment</th>
-          <th>Your Score</th>
-          <th>Total Score</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>week 2</td><td>2.25</td><td>3</td></tr>
-        <tr><td>week 3</td><td>0.0</td><td>3</td></tr>
-        <tr><td>week 4</td><td>3.0</td><td>3</td></tr>
-        <tr><td>week 5</td><td>3.0</td><td>3</td></tr>
-        <tr><td>week 6</td><td>0.0</td><td>3</td></tr>
-        <tr><td>week 7</td><td>0.0</td><td>3</td></tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Total</td>
-          <td>8.25</td>
-          <td>18</td>
-        </tr>
-        <tr>
-          <td colspan="3">Percentage: 45.83%</td>
-        </tr>
-      </tfoot>
-    </table>
+  <!-- 🔗 Embedded Web App Section -->
+  <div class="webapp-link">
+    <h2>View Live Assignment Grades</h2>
+    <a href="https://script.google.com/macros/s/AKfycbxn2C8o8Rm4wrxVzP6iKnUjBFsszPwlI1YqswmbeDPWlRSb9xJr4juAUKvRyc1ot9KU/exec" target="_blank">
+      Open Grade Viewer
+    </a>
   </div>
-</div>
 
-<script>
-  function toggleGrades() {
-    const grades = document.getElementById("grades");
-    grades.style.display = grades.style.display === "none" ? "block" : "none";
-  }
-</script>
+</div>
 
 </body>
 </html>
