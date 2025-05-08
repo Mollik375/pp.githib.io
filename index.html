@@ -79,11 +79,18 @@
       background-color: #0056b3;
     }
 
-    .webapp-link {
+    .iframe-container {
       margin-top: 40px;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       padding: 20px;
       border-radius: 12px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -106,16 +113,13 @@
     <button>Submit Assignment</button>
   </div>
 
-  <!-- ✅ Final Grade Viewer Link -->
-  <div class="webapp-link">
-    <h2>Check Your Grade</h2>
-    <p>Click below to open your grade report:</p>
-    <a 
-      href="https://script.google.com/macros/s/AKfycbwZnA6M_NmDE71mdQExlFFf-Rd46XL57UvDy4CVXziwGMGEXL0v1FX8fgJerIfoPmXUEQ/exec" 
-      target="_blank" 
-      style="display:inline-block; padding: 15px 30px; background-color: #28a745; color: white; border-radius: 8px; text-decoration: none; font-size: 18px;">
-      📊 View Grade
-    </a>
+  <!-- ✅ Embedded Grade Viewer -->
+  <div class="iframe-container">
+    <h2>Your Grades</h2>
+    <iframe 
+      src="https://script.google.com/macros/s/AKfycbwZnA6M_NmDE71mdQExlFFf-Rd46XL57UvDy4CVXziwGMGEXL0v1FX8fgJerIfoPmXUEQ/exec"
+      allowfullscreen>
+    </iframe>
   </div>
 </div>
 
