@@ -79,18 +79,28 @@
       background-color: #0056b3;
     }
 
-    .iframe-container {
+    .link-container {
       margin-top: 40px;
       background: rgba(255, 255, 255, 0.95);
       padding: 20px;
       border-radius: 12px;
     }
 
-    iframe {
-      width: 100%;
-      height: 600px;
+    .grade-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
+      font-size: 18px;
       border: none;
       border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .grade-button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
@@ -113,12 +123,13 @@
     <button>Submit Assignment</button>
   </div>
 
-  <div class="iframe-container">
+  <div class="link-container">
     <h2>Your Grades</h2>
-    <iframe 
-      src="https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec"
-      allowfullscreen>
-    </iframe>
+    <a class="grade-button"
+       href="https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec"
+       target="_blank">
+      📄 View Grades in New Tab
+    </a>
   </div>
 </div>
 
