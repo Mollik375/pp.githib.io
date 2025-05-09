@@ -102,9 +102,26 @@
     .grade-button:hover {
       background-color: #218838;
     }
+
+    /* 🔍 Top-left grade box */
+    #overall-grade {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 8px 12px;
+      border-radius: 8px;
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
+
+<!-- 📊 Overall grade shown here -->
+<div id="overall-grade">Overall Grade: 50.0%</div>
 
 <header>ROHAN</header>
 
@@ -123,7 +140,6 @@
     <button>Submit Assignment</button>
   </div>
 
-  <!-- ✅ New Grade Link -->
   <div class="link-container">
     <h2>Your Grades</h2>
     <a class="grade-button"
