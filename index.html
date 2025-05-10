@@ -1,17 +1,134 @@
-<div id="overall-grade" style="
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 12px;
-  border-radius: 8px;
-  z-index: 1000;">
-  Loading grade...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROHAN's Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      text-align: center;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #ffffff;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 6px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a:hover {
+      color: #007BFF;
+    }
+    .assignment-link {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #fff;
+    }
+    .submit-form {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .submit-form input[type="url"] {
+      padding: 10px;
+      width: 60%;
+      border: none;
+      border-radius: 6px;
+    }
+    .submit-form button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .submit-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Grade box on top-left */
+    #overall-grade {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 👇 Dynamic Grade Display -->
+<div id="overall-grade">Loading grade...</div>
+
+<header>ROHAN</header>
+
+<div class="container">
+  <h2>Assignment Links</h2>
+  <ul id="assignment-list">
+    <li>
+      <a href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link" target="_blank">
+        Week 4
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/drive/folders/1FEMbGA0wqQs4gs_VxhfDAnaXG1N4zfjO?usp=drive_link" target="_blank">
+        Week 7
+      </a>
+    </li>
+  </ul>
+
+  <div class="assignment-link">
+    <a href="https://docs.google.com/document/d/1GDqNgkfNCf0339LKzMwVjqN3XnpB-01QNjRnKBuZ1OE/edit?usp=sharing" target="_blank">
+      Week 2
+    </a>
+  </div>
+
+  <div class="submit-form">
+    <input type="url" placeholder="Paste your assignment link here" />
+    <button>Submit Assignment</button>
+  </div>
 </div>
 
+<!-- 👇 Script to fetch grade -->
 <script>
   fetch("https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec")
     .then(response => response.json())
@@ -23,3 +140,6 @@
       console.error("Error fetching grade:", error);
     });
 </script>
+
+</body>
+</html>
