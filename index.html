@@ -133,12 +133,12 @@
   </div>
 </div>
 
-<!-- 👇 Script to fetch grade -->
+<!-- 👇 Script to fetch grade dynamically -->
 <script>
   fetch("https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec")
     .then(response => response.json())
     .then(data => {
-      document.getElementById("overall-grade").textContent = Overall Grade: ${data.grade}%;
+      document.getElementById("overall-grade").textContent = `Overall Grade: ${data.grade}%`;
     })
     .catch(error => {
       document.getElementById("overall-grade").textContent = "Grade not available";
