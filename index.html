@@ -120,30 +120,6 @@
       </a>
     </li>
   </ul>
-  <div id="gradeContainer">Loading grade...</div>
-
-<script>
-fetch('YOUR_WEB_APP_URL')
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("gradeContainer").innerHTML = `
-      <h2>Your Current Grade</h2>
-      <p><strong>Total Grade Received:</strong> ${data.totalReceived}</p>
-      <p><strong>Total Possible Grade:</strong> ${data.totalPossible}</p>
-      <p><strong>Final Grade Percentage:</strong> ${data.percentage}%</p>
-      <div style="background: #ddd; border-radius: 8px; width: 100%; max-width: 400px;">
-        <div style="background: orange; width: ${data.percentage}%; padding: 8px; border-radius: 8px; color: white; text-align: center;">
-          ${data.percentage}%
-        </div>
-      </div>
-    `;
-  })
-  .catch(err => {
-    document.getElementById("gradeContainer").innerText = "Failed to load grade.";
-    console.error(err);
-  });
-</script>
-
 
   <div class="assignment-link">
     <a href="https://docs.google.com/document/d/1GDqNgkfNCf0339LKzMwVjqN3XnpB-01QNjRnKBuZ1OE/edit?usp=sharing" target="_blank">
@@ -157,6 +133,18 @@ fetch('YOUR_WEB_APP_URL')
   </div>
 </div>
 
+<!-- 👇 Script to fetch grade dynamically -->
+<script>
+  fetch("https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec")
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("overall-grade").textContent = `Overall Grade: ${data.grade}%`;
+    })
+    .catch(error => {
+      document.getElementById("overall-grade").textContent = "Grade not available";
+      console.error("Error fetching grade:", error);
+    });
+</script>
 
 </body>
 </html>
