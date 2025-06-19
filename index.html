@@ -161,6 +161,7 @@
               >
             </li>
             <li>
+              <!-- Week 11 App Script link left untouched -->
               <a
                 href="https://script.google.com/macros/s/AKfycbzi371Uyq4fRvfZu-hLtXr6-0-PreK1R0KK8xL1Q41y8pTRnAXkTtOgoKkBH1UFF0Cz/exec"
                 target="_blank"
@@ -206,10 +207,7 @@
       </div>
     </div>
 
-    <!-- Week 11 App Script link left unchanged -->
-    <!-- No other App Script links present -->
-
-    <!-- New Script to fetch personal grade (top-left corner) -->
+    <!-- New Script to fetch personal grade (using your new link) -->
     <script>
       fetch(
         "https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec"
@@ -222,7 +220,6 @@
         })
         .catch((error) => {
           console.error("Error fetching personal grade.", error);
-          // Removed "Grade unavailable" text to show nothing on error
           document.getElementById("personal-grade").textContent = "";
         });
     </script>
