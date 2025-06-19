@@ -86,6 +86,15 @@
       .submit-form button:hover {
         background-color: #0056b3;
       }
+      .grade-box {
+        margin-top: 40px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>
@@ -95,6 +104,7 @@
       <h2>Assignment Links</h2>
 
       <ul id="assignment-list">
+        <!-- Your assignment links as before -->
         <li>
           <a href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link" target="_blank">
             Week 4 [Folder: Week 4 Submission]
@@ -165,19 +175,26 @@
         </a>
       </div>
 
-      <h2 style="margin-top: 40px; color: white;">📊 Grade Status Display</h2>
-      <a
-        href="https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec"
-        target="_blank"
-        style="font-size: 18px; font-weight: bold; color: #ffffff; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 8px; display: inline-block; margin-top: 10px;"
-      >
-        🔗 View My Current Score & Total Grade
-      </a>
+      <!-- Embedded Grade Display Box -->
+      <div class="grade-box" id="grade-display">Loading your grade...</div>
 
       <div class="submit-form">
         <input type="url" placeholder="Paste your assignment link here" />
         <button>Submit Assignment</button>
       </div>
     </div>
+
+    <!-- Script to fetch and show grade -->
+    <script>
+      fetch("https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec")
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("grade-display").textContent = `Your Grade: ${data.current} / ${data.total}`;
+        })
+        .catch(error => {
+          console.error("Error loading grade:", error);
+          document.getElementById("grade-display").textContent = "Unable to load grade.";
+        });
+    </script>
   </body>
 </html>
