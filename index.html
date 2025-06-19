@@ -221,8 +221,8 @@
         })
         .catch((error) => {
           console.error("Error fetching personal grade.", error);
-          document.getElementById("personal-grade").textContent =
-            "Grade unavailable";
+          // Removed "Grade unavailable" text to show nothing on error
+          document.getElementById("personal-grade").textContent = "";
         });
     </script>
   </body>
