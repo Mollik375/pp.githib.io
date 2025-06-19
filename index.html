@@ -94,6 +94,7 @@
         font-size: 20px;
         font-weight: bold;
         border-radius: 10px;
+        line-height: 1.8;
       }
     </style>
   </head>
@@ -104,7 +105,11 @@
       <h2>Assignment Links</h2>
 
       <ul id="assignment-list">
-        <!-- Your assignment links as before -->
+        <li>
+          <a href="https://mollik375.github.io/pp.githib.io/" target="_blank">
+            Week 1 - Clean Your Room [Live File]
+          </a>
+        </li>
         <li>
           <a href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link" target="_blank">
             Week 4 [Folder: Week 4 Submission]
@@ -175,7 +180,7 @@
         </a>
       </div>
 
-      <!-- Embedded Grade Display Box -->
+      <!-- Grade Display -->
       <div class="grade-box" id="grade-display">Loading your grade...</div>
 
       <div class="submit-form">
@@ -184,12 +189,13 @@
       </div>
     </div>
 
-    <!-- Script to fetch and show grade -->
+    <!-- Fetch and show grade -->
     <script>
       fetch("https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec")
         .then(response => response.json())
         .then(data => {
-          document.getElementById("grade-display").textContent = `Your Grade: ${data.current} / ${data.total}`;
+          document.getElementById("grade-display").innerHTML =
+            `Your Current Grade: ${data.current}<br>Total Available Score: ${data.total}`;
         })
         .catch(error => {
           console.error("Error loading grade:", error);
