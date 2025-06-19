@@ -113,23 +113,23 @@
         <li>
           <a
             href="https://drive.google.com/drive/folders/1zhCUjOkNBiBwxwMemKlqd6vndKNwL2zi?usp=drive_link"
-            target="_blank">
-            Week 4
-          </a>
+            target="_blank"
+            >Week 4</a
+          >
         </li>
         <li>
           <a
             href="https://drive.google.com/drive/folders/1FEMbGA0wqQs4gs_VxhfDAnaXG1N4zfjO?usp=drive_link"
-            target="_blank">
-            Week 7
-          </a>
+            target="_blank"
+            >Week 7</a
+          >
         </li>
         <li>
           <a
             href="https://docs.google.com/document/d/1TIXjxXLL3y-6YTN11A_EMo0jAslFTm-7jfncob_CImo/edit?usp=sharing"
-            target="_blank">
-            Week 10
-          </a>
+            target="_blank"
+            >Week 10</a
+          >
         </li>
         <li>
           <strong>Week 6</strong>
@@ -137,16 +137,16 @@
             <li>
               <a
                 href="https://hasanosiul.github.io/project.html"
-                target="_blank">
-                Cryptography Website Tool
-              </a>
+                target="_blank"
+                >Cryptography Website Tool</a
+              >
             </li>
             <li>
               <a
                 href="https://docs.google.com/document/d/1yY5rERiUCwI7Z9HQ6zM88mUeX05Z4OfkIP-7y-6E_7o/edit?usp=drive_link"
-                target="_blank">
-                Documentation and Reflection
-              </a>
+                target="_blank"
+                >Documentation and Reflection</a
+              >
             </li>
           </ul>
         </li>
@@ -156,50 +156,48 @@
             <li>
               <a
                 href="https://drive.google.com/drive/folders/18XQUoNzrUSJUMlraiwH_nGvnnyRUDxpV?usp=drive_link"
-                target="_blank">
-                Google Drive Submission
-              </a>
+                target="_blank"
+                >Google Drive Submission</a
+              >
             </li>
             <li>
               <a
                 href="https://script.google.com/macros/s/AKfycbzi371Uyq4fRvfZu-hLtXr6-0-PreK1R0KK8xL1Q41y8pTRnAXkTtOgoKkBH1UFF0Cz/exec"
-                target="_blank">
-                Live Web App (Smart Student Record System)
-              </a>
+                target="_blank"
+                >Live Web App (Smart Student Record System)</a
+              >
             </li>
           </ul>
         </li>
         <li>
           <a
             href="https://docs.google.com/document/d/1fEUutFVYvNmYpDB1dTXv6F5cSwFhWhxjYPejTlZunuk/edit?usp=sharing"
-            target="_blank">
-            Week 13 - AI as my Tutor
-          </a>
+            target="_blank"
+            >Week 13 - AI as my Tutor</a
+          >
           <ul>
             <li>
-              <a
-                href="https://chatgpt.com/c/683c140b-78e8-8000-a3bc-cd80aaa8447e"
-                target="_blank">
-                Chat with GPT
-              </a>
+              <a href="https://chatgpt.com/c/683c140b-78e8-8000-a3bc-cd80aaa8447e" target="_blank"
+                >Chat with GPT</a
+              >
             </li>
           </ul>
         </li>
         <li>
           <a
             href="https://drive.google.com/drive/folders/1bvASORkhUCev445_rJd6Vw_7GZHyrKoF?usp=sharing"
-            target="_blank">
-            Week 16 - Hiking
-          </a>
+            target="_blank"
+            >Week 16 - Hiking</a
+          >
         </li>
       </ul>
 
       <div class="assignment-link">
         <a
           href="https://docs.google.com/document/d/1GDqNgkfNCf0339LKzMwVjqN3XnpB-01QNjRnKBuZ1OE/edit?usp=sharing"
-          target="_blank">
-          Week 2
-        </a>
+          target="_blank"
+          >Week 2</a
+        >
       </div>
 
       <div class="submit-form">
@@ -208,18 +206,23 @@
       </div>
     </div>
 
-    <!-- 👇 Script to fetch personal grade (top-left corner) -->
+    <!-- 👇 Your existing Week 11 script link left unchanged -->
+
+    <!-- 👇 New Script to fetch personal grade (top-left corner) -->
     <script>
       fetch(
         "https://script.google.com/macros/s/AKfycbxDjUDun_-UyRl7DRS0FiTUG4b--ldHsyqLZIJopPRpaV35hYG1c2lkPs0_CxA9yHC0/exec"
       )
-        .then((response) => response.json()) 
+        .then((response) => response.json())
         .then((data) => {
-          document.getElementById("personal-grade").textContent = `Overall Grade: ${data.grade}%`;
+          document.getElementById(
+            "personal-grade"
+          ).textContent = `Overall Grade: ${data.grade}%`;
         })
         .catch((error) => {
           console.error("Error fetching personal grade.", error);
-          document.getElementById("personal-grade").textContent = "Grade unavailable";
+          document.getElementById("personal-grade").textContent =
+            "Grade unavailable";
         });
     </script>
   </body>
